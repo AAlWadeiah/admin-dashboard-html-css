@@ -4,7 +4,8 @@
     box-sizing: border-box;
     --ui-blue: #1992D3;
     --ui-grey: #E2E8F0;
-    --ui-yellow: #FACC14
+    --ui-yellow: #FACC14;
+    --sidebar-fill-color: #FFF;
 }
 
 html {
@@ -33,4 +34,26 @@ header {
 main {
     background-color: var(--ui-grey);
     grid-area: main;
+}
+
+.icon {
+    width: 25px;
+    color: var(--sidebar-fill-color)
+}
+
+/* Sidebar styles */
+
+.sb-item {
+    max-height: 25px;
+    display: flex;
+    flex: 1;
+    /* grid-template-columns: min-content auto;
+    grid-template-rows: 25; */
+    gap: 15px;
+    color: #FFF;
+}
+
+
+.sb-item > img {
+    fill: #FFF;
 }
