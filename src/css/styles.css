@@ -23,11 +23,6 @@ body {
     "sidebar main";
 }
 
-header {
-    background-color: #FFF;
-    grid-area: header;
-}
-
 main {
     background-color: var(--ui-grey);
     grid-area: main;
@@ -36,7 +31,6 @@ main {
 .icon {
     width: var(--icon-width);
     height: var(--icon-height);
-    color: var(--sidebar-fill-color)
 }
 
 /* Sidebar styles */
@@ -61,7 +55,7 @@ a.sb-item {
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: #FFF;
+    color: var(--sidebar-fill-color)
 }
 
 .nav-menu {
@@ -77,4 +71,17 @@ a.sb-item {
 .brand > .icon {
     width: calc(var(--icon-width) * 2);
     height: calc(var(--icon-height) * 2);
+}
+
+/* Header styles */
+
+header {
+    background-color: #FFF;
+    grid-area: header;
+}
+
+.profile-pic > img{
+    width: 50px;
+    border-radius: 50%; 
+    border: 4px solid var(--ui-yellow);
 }
