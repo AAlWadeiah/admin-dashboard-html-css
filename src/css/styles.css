@@ -6,6 +6,8 @@
     --ui-grey: #E2E8F0;
     --ui-yellow: #FACC14;
     --sidebar-fill-color: #FFF;
+    --icon-width: 25px;
+    --icon-height: 25px;
 }
 
 html {
@@ -26,34 +28,53 @@ header {
     grid-area: header;
 }
 
-.sidebar { 
-    background-color: var(--ui-blue);
-    grid-area: sidebar;
-}
-
 main {
     background-color: var(--ui-grey);
     grid-area: main;
 }
 
 .icon {
-    width: 25px;
+    width: var(--icon-width);
+    height: var(--icon-height);
     color: var(--sidebar-fill-color)
 }
 
 /* Sidebar styles */
 
+.sidebar { 
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    background-color: var(--ui-blue);
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: max-content max-content;
+    gap: 3rem;
+}
+
+a.sb-item {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
 .sb-item {
-    max-height: 25px;
+    padding: 0.35rem;
     display: flex;
-    flex: 1;
-    /* grid-template-columns: min-content auto;
-    grid-template-rows: 25; */
-    gap: 15px;
+    align-items: center;
+    gap: 1rem;
     color: #FFF;
 }
 
+.nav-menu {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    gap: 3rem;
+}
 
-.sb-item > img {
-    fill: #FFF;
+.brand.sb-item {
+    font-size: 26px;
+}
+
+.brand > .icon {
+    width: calc(var(--icon-width) * 2);
+    height: calc(var(--icon-height) * 2);
 }
