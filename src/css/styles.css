@@ -100,8 +100,9 @@ header {
     flex: 1 1 auto;
     height: 1.5rem;
     padding: 4px;
-    border-radius: 5px;
-    /* border: ; */
+    border-radius: 100rem;
+    background-color: var(--ui-grey);
+    border: none;
 }
 
 .profile-menu-widget {
