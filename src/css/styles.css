@@ -108,12 +108,20 @@ header {
 .profile-menu-widget {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.profile-menu-widget > .profile-pic > img {
+    width: 40px;
 }
 
 .user-greeting {
     display: flex;
     align-items: center;
     gap: 16px;
+    font-weight: 600;
 }
 
 .user-greeting > .profile-pic > img {
