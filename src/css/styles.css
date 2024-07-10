@@ -24,11 +24,6 @@ body {
     "sidebar main";
 }
 
-main {
-    background-color: var(--ui-grey);
-    grid-area: main;
-}
-
 .icon {
     width: var(--icon-width);
     height: var(--icon-height);
@@ -149,3 +144,11 @@ header {
     font-weight: 600;
     font-size: 14px;
 }
+
+/* Main styles */
+
+main {
+    background-color: var(--ui-grey);
+    grid-area: main;
+}
+
