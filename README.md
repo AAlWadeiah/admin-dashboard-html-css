@@ -4,6 +4,16 @@ Admin dashboard made with pure HTML and CSS for the final project of the Interme
 
 Link to project spec: https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
 
+## Project Showcase
+
+### UI on small screen
+
+![Dashboard UI on small screen](./src/imgs/complete-proj/dashboard-1.png)
+
+### UI on wide screen
+
+![Dashboard UI on wide screen](./src/imgs/complete-proj/dashboard-2.png)
+
 ## Credits
 
 <a href="https://www.flaticon.com/free-icons/hacker" title="hacker icons">Hacker icons created by Freepik - Flaticon</a>
